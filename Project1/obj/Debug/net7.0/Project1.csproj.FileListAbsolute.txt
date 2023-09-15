@@ -1,0 +1,14 @@
+C:\Users\bikram.shrestha\source\repos\dotNet-Trainee-2023\Bikram-DotnetProject\Project1\bin\Debug\net7.0\Project1.exe
+C:\Users\bikram.shrestha\source\repos\dotNet-Trainee-2023\Bikram-DotnetProject\Project1\bin\Debug\net7.0\Project1.deps.json
+C:\Users\bikram.shrestha\source\repos\dotNet-Trainee-2023\Bikram-DotnetProject\Project1\bin\Debug\net7.0\Project1.runtimeconfig.json
+C:\Users\bikram.shrestha\source\repos\dotNet-Trainee-2023\Bikram-DotnetProject\Project1\bin\Debug\net7.0\Project1.dll
+C:\Users\bikram.shrestha\source\repos\dotNet-Trainee-2023\Bikram-DotnetProject\Project1\bin\Debug\net7.0\Project1.pdb
+C:\Users\bikram.shrestha\source\repos\dotNet-Trainee-2023\Bikram-DotnetProject\Project1\obj\Debug\net7.0\Project1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bikram.shrestha\source\repos\dotNet-Trainee-2023\Bikram-DotnetProject\Project1\obj\Debug\net7.0\Project1.AssemblyInfoInputs.cache
+C:\Users\bikram.shrestha\source\repos\dotNet-Trainee-2023\Bikram-DotnetProject\Project1\obj\Debug\net7.0\Project1.AssemblyInfo.cs
+C:\Users\bikram.shrestha\source\repos\dotNet-Trainee-2023\Bikram-DotnetProject\Project1\obj\Debug\net7.0\Project1.csproj.CoreCompileInputs.cache
+C:\Users\bikram.shrestha\source\repos\dotNet-Trainee-2023\Bikram-DotnetProject\Project1\obj\Debug\net7.0\Project1.dll
+C:\Users\bikram.shrestha\source\repos\dotNet-Trainee-2023\Bikram-DotnetProject\Project1\obj\Debug\net7.0\refint\Project1.dll
+C:\Users\bikram.shrestha\source\repos\dotNet-Trainee-2023\Bikram-DotnetProject\Project1\obj\Debug\net7.0\Project1.pdb
+C:\Users\bikram.shrestha\source\repos\dotNet-Trainee-2023\Bikram-DotnetProject\Project1\obj\Debug\net7.0\Project1.genruntimeconfig.cache
+C:\Users\bikram.shrestha\source\repos\dotNet-Trainee-2023\Bikram-DotnetProject\Project1\obj\Debug\net7.0\ref\Project1.dll
