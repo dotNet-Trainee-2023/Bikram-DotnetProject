@@ -5,65 +5,91 @@ namespace Project1
     {
         static void Main(string[] args)
         {
-            int elctronicCost, clothingCost,electronicQuantity,clothingQuantity;
-            string boolvalue1 = "true";
-            string? boolvalue2; //Null Coalescing
-            bool bool1,bool2;
-            //creating object of the program
-            Electronics electronics = new Electronics();
-            Clothing clothing = new Clothing();
-            
-          
 
-            
-            electronicQuantity=electronics.GetQuantityInfo();
-            Console.WriteLine($"the total elctronics quantity is {electronicQuantity}");
-            clothingQuantity =clothing.GetQuantityInfo();
-            Console.WriteLine($"the total clothing quantity is {clothingQuantity}");
-            electronics.CategoryInfo();
-            clothing.CategoryInfo();
+            List<Employee> employees = ReadEmployeeFromCsv("C:\\Users\\bikram.shrestha\\source\\repos\\employees.csv");
+            //foreach (var employee in employees)
+            //{
+            //    Console.WriteLine($"First Name: {employee.Salary}");
+            //}
 
-            //ternary opertaor
-            elctronicCost = electronics.GetCost();
-            string result= (elctronicCost==40000)? $"the total elctronics cost is {elctronicCost}" : "Not avaliable";
-            Console.WriteLine(result);
+            Console.WriteLine("---LINQ Expression--");
 
-            //Using int parse
-            Console.WriteLine("Enter the product id:");
-            string? input1 = Console.ReadLine();
-            int ProductId = int.Parse(input1);
-
-            //using tryparsing
-            if(bool.TryParse(boolvalue1, out bool1))
+            // Group the employees by their department.
+            var employeesByDepartment = employees
+                .GroupBy(e => e.Department);
+            foreach (var group in employeesByDepartment)
             {
-                Console.WriteLine($"Parsing {boolvalue1} succeeded");
-            }
-            else 
-            {
-                Console.WriteLine($"Parsing {boolvalue1} failed");
-            }
-            Console.WriteLine("enter the value of bool:");
-            boolvalue2= Console.ReadLine();
-            if (bool.TryParse(boolvalue2, out bool2))
-            {
-                Console.WriteLine($"Parsing {boolvalue2} succeeded");
-            }
-            else
-            {
-                Console.WriteLine($"Parsing {boolvalue2} failed");
+                foreach (var employee in group)
+                {
+                    Console.WriteLine($" Department: {group.Key} {employee.FirstName} {employee.LastName} ");
+                }
             }
 
-            //using tuple
-            var electronicsInfo = electronics.ElectronicsDetial();
-            string? category = electronicsInfo.Item1;
-            int price=electronicsInfo.Item2;
-            int quantity = electronicsInfo.Item3;
-            Console.WriteLine($"Category:{category},Price:{price},quantity:{quantity}");
 
-            //Linq operation
-            LINQ.Linq();
+            //Find highest salary earning Project Manager.
+            var highestSalaryProjectManager = employees
+                .Where(e => e.JobTitle == "Project Manager")
+                .OrderByDescending(e => e.Salary)
+                .FirstOrDefault();
+            Console.WriteLine($"The highest salary of Project manager is {highestSalaryProjectManager.Salary}");
+
+            //Find the most experienced Web Developer.
+            var mostExperiencedWebDeveloper= employees
+                .Where(e=>e.JobTitle=="Web Developer")
+                .OrderByDescending(e=>e.Years)
+                .FirstOrDefault();
+            Console.WriteLine($"The most experienced Web developer is with their experienceyear is{mostExperiencedWebDeveloper.FirstName} and {mostExperiencedWebDeveloper.Years} years");
+
+            //Find the average salary of all Job Title.
+            var averageSalaryOfJobTitle = employees
+                .GroupBy(e => e.JobTitle);
+            foreach (var jobgroup in averageSalaryOfJobTitle)
+            {
+                string jobTitle = jobgroup.Key;
+                decimal averageSalary = jobgroup.Average(e => (decimal.Parse(e.Salary)));
+
+                Console.WriteLine($"Job Title: {jobTitle}");
+                Console.WriteLine($"Average Salary: {averageSalary}");
+                Console.WriteLine();
+            }
+
+
+            // Find total number of male and female employees.
+            var countNoOfEmployees = employees.GroupBy(e => e.Gender);
+            foreach (var group in countNoOfEmployees)
+            {
+                var count = group.Count();
+                Console.WriteLine($"Number of {group.Key} Employees: {count} ");
+            }
+
+
 
         }
 
+        //listing the employee in list 
+        static List<Employee> ReadEmployeeFromCsv(string path)
+        {
+            var result = new List<Employee>();
+            var lines=File.ReadAllLines(path);
+
+            foreach (var line in lines.Skip(1))
+            {
+                var word = line.Split(',');
+                result.Add(new Employee
+                {
+                    FirstName = word[0],
+                    LastName = word[1],
+                    Email = word[2],
+                    PhoneNumber = word[3],
+                    Gender = word[4],
+                    Age = word[5],
+                    JobTitle = word[6],
+                    Years = word[7],
+                    Salary = word[8],
+                    Department = word[9]
+                });
+            }
+            return result;
+        }
     }
 }
