@@ -1,6 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MVCProject.Data;
-using MVCProject.Model;
+﻿using Entites;
+using Microsoft.AspNetCore.Mvc;
 using MVCProject.Services;
 
 namespace MVCProject.Controllers

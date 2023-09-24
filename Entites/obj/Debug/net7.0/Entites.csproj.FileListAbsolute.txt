@@ -1,0 +1,14 @@
+D:\MVC\Bikram-DotnetProject\Entites\bin\Debug\net7.0\Entites.deps.json
+D:\MVC\Bikram-DotnetProject\Entites\bin\Debug\net7.0\Entites.dll
+D:\MVC\Bikram-DotnetProject\Entites\bin\Debug\net7.0\Entites.pdb
+D:\MVC\Bikram-DotnetProject\Entites\obj\Debug\net7.0\Entites.csproj.AssemblyReference.cache
+D:\MVC\Bikram-DotnetProject\Entites\obj\Debug\net7.0\Entites.GeneratedMSBuildEditorConfig.editorconfig
+D:\MVC\Bikram-DotnetProject\Entites\obj\Debug\net7.0\Entites.AssemblyInfoInputs.cache
+D:\MVC\Bikram-DotnetProject\Entites\obj\Debug\net7.0\Entites.AssemblyInfo.cs
+D:\MVC\Bikram-DotnetProject\Entites\obj\Debug\net7.0\Entites.csproj.CoreCompileInputs.cache
+D:\MVC\Bikram-DotnetProject\Entites\obj\Debug\net7.0\Entites.dll
+D:\MVC\Bikram-DotnetProject\Entites\obj\Debug\net7.0\refint\Entites.dll
+D:\MVC\Bikram-DotnetProject\Entites\obj\Debug\net7.0\Entites.pdb
+D:\MVC\Bikram-DotnetProject\Entites\obj\Debug\net7.0\ref\Entites.dll
+D:\MVC\Bikram-DotnetProject\Entites\bin\Debug\net7.0\Entites.runtimeconfig.json
+D:\MVC\Bikram-DotnetProject\Entites\obj\Debug\net7.0\Entites.genruntimeconfig.cache

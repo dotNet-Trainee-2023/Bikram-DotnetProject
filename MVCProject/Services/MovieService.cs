@@ -1,47 +1,45 @@
-﻿using MVCProject.Data;
-using MVCProject.Model;
+﻿using Entites;
+using Microsoft.CodeAnalysis;
+using Repositories.Contracts;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MVCProject.Services
 {
     public class MovieService : IMovieService
     {
-        private readonly MovieDbContext _context;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public MovieService(MovieDbContext movieDbContext)
-        {
-            _context = movieDbContext;
+        public MovieService(IUnitOfWork unitOfWork)
+        {            
+            _unitOfWork = unitOfWork;
         }
 
         public void AddMovie(Movie movie)
         {
-            _context.Movies.Add(movie);
-            _context.SaveChanges();
+            _unitOfWork.MovieRepo.Create(movie);
         }
 
         public void DeleteMovie(int id)
         {
-            Movie? movie = _context.Movies.Find(id);
-            if (movie != null)
-            {
-                _context.Movies.Remove(movie);
-                _context.SaveChanges();
-            }
+          _unitOfWork.MovieRepo.Delete(id);
+            
         }
 
         public List<Movie> GetAllMovies()
         {
-            return _context.Movies.ToList();
+            return  _unitOfWork.MovieRepo.GetAllAsync();
         }
 
         public Movie? GetMovie(int id)
         {
-            return _context.Movies.Find(id);
+            return _unitOfWork.MovieRepo.GetByIdAsync(id);
         }
+
+       
 
         public void UpdateMovie(Movie movie)
         {
-            var viewmovie = _context.Movies.Find(movie.Id);
+            var viewmovie = _unitOfWork.MovieRepo.GetByIdAsync(movie.Id);
             if (viewmovie != null)
             {
                 viewmovie.Name = movie.Name;
@@ -49,8 +47,7 @@ namespace MVCProject.Services
                 viewmovie.Director = movie.Director;
                 viewmovie.ReleaseDate = movie.ReleaseDate;
 
-                _context.Movies.Update(viewmovie);
-                _context.SaveChanges();
+                _unitOfWork.MovieRepo.Update(viewmovie);
             }
         }
     }

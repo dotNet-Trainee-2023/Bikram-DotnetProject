@@ -1,6 +1,9 @@
+using Entities.Data;
 using Microsoft.EntityFrameworkCore;
-using MVCProject.Data;
+
 using MVCProject.Services;
+using Repositories.Contracts;
+using Repositories.Repos;
 using System;
 
 namespace MVCProject
@@ -14,8 +17,10 @@ namespace MVCProject
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<MovieDbContext>(options =>
-               options.UseSqlite(builder.Configuration.GetConnectionString("SqliteConnection")));
+               options.UseSqlServer(builder.Configuration.GetConnectionString("Bikram")));
             builder.Services.AddScoped<IMovieService , MovieService>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            
 
             var app = builder.Build();
 

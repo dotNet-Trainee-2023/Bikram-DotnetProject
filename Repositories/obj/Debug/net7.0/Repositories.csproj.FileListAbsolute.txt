@@ -1,0 +1,15 @@
+D:\MVC\Bikram-DotnetProject\Repositories\bin\Debug\net7.0\Repositories.deps.json
+D:\MVC\Bikram-DotnetProject\Repositories\bin\Debug\net7.0\Repositories.dll
+D:\MVC\Bikram-DotnetProject\Repositories\bin\Debug\net7.0\Repositories.pdb
+D:\MVC\Bikram-DotnetProject\Repositories\obj\Debug\net7.0\Repositories.csproj.AssemblyReference.cache
+D:\MVC\Bikram-DotnetProject\Repositories\obj\Debug\net7.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\MVC\Bikram-DotnetProject\Repositories\obj\Debug\net7.0\Repositories.AssemblyInfoInputs.cache
+D:\MVC\Bikram-DotnetProject\Repositories\obj\Debug\net7.0\Repositories.AssemblyInfo.cs
+D:\MVC\Bikram-DotnetProject\Repositories\obj\Debug\net7.0\Repositories.csproj.CoreCompileInputs.cache
+D:\MVC\Bikram-DotnetProject\Repositories\obj\Debug\net7.0\Repositories.csproj.CopyComplete
+D:\MVC\Bikram-DotnetProject\Repositories\obj\Debug\net7.0\Repositories.dll
+D:\MVC\Bikram-DotnetProject\Repositories\obj\Debug\net7.0\refint\Repositories.dll
+D:\MVC\Bikram-DotnetProject\Repositories\obj\Debug\net7.0\Repositories.pdb
+D:\MVC\Bikram-DotnetProject\Repositories\obj\Debug\net7.0\ref\Repositories.dll
+D:\MVC\Bikram-DotnetProject\Repositories\bin\Debug\net7.0\Entities.dll
+D:\MVC\Bikram-DotnetProject\Repositories\bin\Debug\net7.0\Entities.pdb
