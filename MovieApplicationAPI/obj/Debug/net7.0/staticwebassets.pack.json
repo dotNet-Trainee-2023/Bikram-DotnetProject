@@ -1,0 +1,85 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (1)_638323165061909239.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (1)_638323165061909239.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (1)_638323165415507567.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (1)_638323165415507567.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (3)_638321085800278199.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (3)_638321085800278199.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (3)_638321100903252895.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (3)_638321100903252895.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (3)_638321109253731402.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (3)_638321109253731402.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (4)_638321016895645555.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (4)_638321016895645555.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (4)_638321026279374645.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (4)_638321026279374645.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (7)_638321111434361296.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (7)_638321111434361296.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (7)_638321112407309792.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (7)_638321112407309792.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (7)_638322916372732841.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (7)_638322916372732841.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image_638321117181552609.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image_638321117181552609.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image_638321169008866973.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image_638321169008866973.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image_638321169488033812.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image_638321169488033812.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image_638321178783801503.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image_638321178783801503.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image_638321200400606308.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image_638321200400606308.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image_638321200828422279.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image_638321200828422279.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MovieAppAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.MovieAppAPI.props",
+      "PackagePath": "build\\MovieAppAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.MovieAppAPI.props",
+      "PackagePath": "buildMultiTargeting\\MovieAppAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.MovieAppAPI.props",
+      "PackagePath": "buildTransitive\\MovieAppAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
