@@ -39,14 +39,9 @@ namespace MovieAppInfrastructure.Migrations
                     b.Property<DateTime>("TimeStamp")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
                     b.HasKey("CommentId");
 
                     b.HasIndex("MovieId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Comments");
                 });
@@ -118,18 +113,6 @@ namespace MovieAppInfrastructure.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = 1,
-                            Email = "stha.bikram999@gmail.com",
-                            FirstName = "Bikram",
-                            LastName = "Stha",
-                            PasswordHash = "$2a$11$VBXS0oug0JmrE3RZfPRaXuhMTufJJRMgdeMCgBkNpNxczcavrJeTy",
-                            Role = "Admin",
-                            UserName = "BikramShrestha"
-                        });
                 });
 
             modelBuilder.Entity("MovieAppDomain.Comment", b =>
@@ -140,15 +123,7 @@ namespace MovieAppInfrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MovieAppDomain.User", "Users")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Movies");
-
-                    b.Navigation("Users");
                 });
 #pragma warning restore 612, 618
         }

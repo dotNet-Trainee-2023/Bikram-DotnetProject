@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic;
 using MovieAppAPI.Data;
 using MovieAppAppication.Interface.IRepository;
 using MovieAppDomain;
@@ -27,6 +28,28 @@ namespace MovieAppInfrastructure.Implementation.Repository
         {
             var users = _context.Users.SingleOrDefault(x => x.Email ==user.Email);
             return users;
+        }
+
+        public async Task<List<User>> GetAllUserAsync()
+        {
+            return await _context.Users.ToListAsync();
+        }
+
+        public async Task<User> GetByUserIdAsync(int Userid)
+        {
+            return await _context.Users.FindAsync(Userid);
+        }
+
+        public async Task<bool> DeleteUserAsync(int Userid)
+        {
+            var userToDelete = await _context.Users.FindAsync(Userid);
+
+            if (userToDelete != null)
+            {
+                _context.Users.Remove(userToDelete);
+                return true;
+            }
+            return false;
         }
     }
 }

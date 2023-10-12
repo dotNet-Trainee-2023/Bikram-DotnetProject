@@ -18,20 +18,20 @@ namespace MovieAppAPI.Data
                 .HasKey(c => c.CommentId);
             modelBuilder.Entity<Comment>().HasIndex(c => c.MovieId).IsUnique(false);
 
-            string plainPassword = "Leomessi10@"; 
-            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(plainPassword);
+            //string plainPassword = "Leomessi10@"; 
+            //string hashedPassword = BCrypt.Net.BCrypt.HashPassword(plainPassword);
 
            
-            modelBuilder.Entity<User>().HasData(new User
-            {
-                UserId = 1,
-                UserName = "BikramShrestha",
-                PasswordHash = hashedPassword,
-                Email = "stha.bikram999@gmail.com",
-                FirstName = "Bikram",
-                LastName = "Stha",
-                Role = "Admin"
-            });
+            //modelBuilder.Entity<User>().HasData(new User
+            //{
+            //    UserId = 15,
+            //    UserName = "BikramShrestha",
+            //    PasswordHash = hashedPassword,
+            //    Email = "stha.bikram999@gmail.com".ToLower(),
+            //    FirstName = "Bikram",
+            //    LastName = "Shrestha",
+            //    Role = "Admin"
+            //});
         modelBuilder.Entity<User>().Property(u => u.Role).HasDefaultValue("User");
         }
        

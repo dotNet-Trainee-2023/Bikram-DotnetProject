@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MovieAppAPI.Data;
@@ -8,6 +9,7 @@ using MovieAppAPI.Services;
 namespace MovieAppAPI.Controllers
 {
     [Route("api/[controller]")]
+    
     [ApiController]
     public class MovieController : Controller
     {
@@ -19,15 +21,16 @@ namespace MovieAppAPI.Controllers
             _movieService = movieService;
         }
 
-        
+        //[Authorize(Roles = "Admin")]
         [HttpGet("GetAllMovie")]
+        
         public async Task<IActionResult> Index()
         {
             var moviesDto = await _movieService.GetAllMoviesAsync();
             return Ok(moviesDto);
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         //[Authorize]
         [HttpPost("Create")]
         public async Task<IActionResult> Create([FromForm] MovieCreateDto movieDto)
@@ -45,7 +48,7 @@ namespace MovieAppAPI.Controllers
         }
 
         [HttpPost("Edit")]
-        public async Task<IActionResult> Edit( MovieDto movieDto)
+        public async Task<IActionResult> Edit([FromForm] MovieUpdateDto movieDto)
         {
            
             if (!ModelState.IsValid)

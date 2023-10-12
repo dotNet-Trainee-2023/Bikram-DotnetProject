@@ -8,10 +8,13 @@ namespace MovieAppAPI.Services
 
         Task<CommentDto> GetCommentAsync(int commentId);
 
-        Task<bool> AddCommentAsync(CommentCreateDto commentDto);
+        Task<bool> CreateMovieCommentAsync(CommentCreateDto commentDto);
 
         Task<bool> UpdateCommentAsync(CommentDto commentDto);
 
         Task<bool> DeleteCommentAsync(int commentId);
+        Task<List<CommentDto>> GetMovieCommentAsync(int MovieId);
+
+        Task<bool> AddMovieCommentAsync(int MovieId, CommentCreateDto commentDto);
     }
 }

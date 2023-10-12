@@ -3,6 +3,7 @@ using MovieAppAPI.Data;
 using MovieAppAPI.Dto;
 using MovieAppAppication.Interface.IRepository;
 using MovieAppDomain;
+using System.ComponentModel.Design;
 
 namespace MovieAppAPI.Services
 {
@@ -16,11 +17,18 @@ namespace MovieAppAPI.Services
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
-        public async Task<bool> AddCommentAsync(CommentCreateDto commentDto)
+        public async Task<bool> CreateMovieCommentAsync(CommentCreateDto commentDto)
         {
             var comment = _mapper.Map<Comment>(commentDto);
             await _unitOfWork.CommentRepo.CreateCommentAsync(comment);
             await _unitOfWork.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<bool> AddMovieCommentAsync(int MovieId, CommentCreateDto commentDto)
+        {
+            var comment = _mapper.Map<Comment>(commentDto);
+            await _unitOfWork.CommentRepo.CreateMovieCommentAsync(MovieId, comment);
             return true;
         }
 
@@ -44,6 +52,13 @@ namespace MovieAppAPI.Services
             var comment = await _unitOfWork.CommentRepo.GetByCommentIdAsync(commentId);
             var commentDto = _mapper.Map<CommentDto>(comment);
             return commentDto;
+        }
+
+        public async Task<List<CommentDto>> GetMovieCommentAsync(int MovieId)
+        {
+            var movieComment = await _unitOfWork.CommentRepo.GetByMovieCommentIdAsync(MovieId);
+            var movieCommentDto = _mapper.Map<List<CommentDto>>(movieComment);
+            return movieCommentDto;
         }
 
         public async Task<bool> UpdateCommentAsync(CommentDto commentDto)

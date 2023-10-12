@@ -26,7 +26,6 @@ namespace MovieAppAPI.Services
             var movie = await _unitOfWork.MovieRepo.GetAllAsync();
 
             var movieDto = _mapper.Map<List<MovieDto>>(movie);
-
             //movieDto.MovieImage = movie.PhotoPath;
             return movieDto;
         }
@@ -51,9 +50,8 @@ namespace MovieAppAPI.Services
             {
                 await movieDto.MovieImage.CopyToAsync(_fileStream);
             }
-            //string _urlPath = _filePath.Replace('\\', '/');
+
             string _urlPath = _filePath.Replace('\\', '/').Split("wwwroot").Last();
-            //string _photoPath = _filePath.Split("wwwroot").Last();
 
             var movie = _mapper.Map<Movie>(movieDto);
             movie.PhotoPath = _urlPath;
@@ -62,9 +60,25 @@ namespace MovieAppAPI.Services
             return true;
         }
 
-        public async Task<bool> UpdateMovieAsync(MovieDto movieDto)
+        public async Task<bool> UpdateMovieAsync(MovieUpdateDto movieDto)
         {
+            if (!Directory.Exists(_imageMovieDirectory))
+            {
+                Directory.CreateDirectory(_imageMovieDirectory);
+            }
+
+            FileInfo _fileInfo = new FileInfo(movieDto.MovieImage.FileName);
+            string filename = _fileInfo.Name.Replace(_fileInfo.Extension, "") + "_" + DateTime.Now.Ticks.ToString() + _fileInfo.Extension;
+            var _filePath = $"{_imageMovieDirectory}\\{filename}";
+            using (var _fileStream = new FileStream(_filePath, FileMode.Create))
+            {
+                await movieDto.MovieImage.CopyToAsync(_fileStream);
+            }
+
+            string _urlPath = _filePath.Replace('\\', '/').Split("wwwroot").Last();
+
             var movie = _mapper.Map<Movie>(movieDto);
+            movie.PhotoPath = _urlPath;
 
             await _unitOfWork.MovieRepo.UpdateAsync(movie);
             await _unitOfWork.SaveChangesAsync();

@@ -16,26 +16,28 @@ namespace MovieAppAPI.Controllers
             _commentService = commentService;
         }
 
-        [HttpGet("GetAllComment")]
-        public async Task<IActionResult> Index()
-        {
-            var commentDto = await _commentService.GetAllCommentAsync();
-            return Ok(commentDto);
+        //[HttpGet("GetAllComment")]
+        //public async Task<IActionResult> Index()
+        //{
+        //    var commentDto = await _commentService.GetAllCommentAsync();
+        //    return Ok(commentDto);
 
-        }
-        [HttpPost("Create")]
-        public async Task<IActionResult> Create([FromForm] CommentCreateDto commentDto)
-            {
-            await _commentService.AddCommentAsync(commentDto);
-            return Ok();
-        }
+        //}
 
-        [HttpGet("GetById")]
-        public async Task<IActionResult> GetMovieById(int Commentid)
-        {
-            var commentDto = await _commentService.GetCommentAsync(Commentid);
-            return Ok(commentDto);
-        }
+        //[HttpPost("Create")]
+        //public async Task<IActionResult> Create([FromForm] CommentCreateDto commentDto)
+        //    {
+        //    await _commentService.CreateMovieCommentAsync(commentDto);
+        //    return Ok();
+        //}
+
+        //[HttpGet("GetById")]
+        //public async Task<IActionResult> GetCommentById(int Commentid)
+        //{
+        //    var commentDto = await _commentService.GetCommentAsync(Commentid);
+        //    return Ok(commentDto);
+        //}
+
         [HttpPost("Edit")]
         public async Task<IActionResult> Edit(CommentDto commentDto)
         {
@@ -54,5 +56,17 @@ namespace MovieAppAPI.Controllers
             return Ok();
         }
 
+        [HttpGet("GetCommentByMovieId")]
+        public async Task<IActionResult> GetMovieCommentById(int MovieId)
+        {
+            var commentDto = await _commentService.GetMovieCommentAsync(MovieId);
+            return Ok(commentDto);
+        }
+        [HttpPost("CreateMovieComment")]
+        public async Task<IActionResult> CreateMovieComment(int MovieId, CommentCreateDto commentDto)
+        {
+            await _commentService.AddMovieCommentAsync(MovieId, commentDto);
+            return Ok();
+        }
     }
 }

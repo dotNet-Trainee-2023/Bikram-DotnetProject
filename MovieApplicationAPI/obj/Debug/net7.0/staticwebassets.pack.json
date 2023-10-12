@@ -1,12 +1,116 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\20231006_211917_638325771067353255.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\20231006_211917_638325771067353255.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\20231006_211917_638325771429608135.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\20231006_211917_638325771429608135.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\20231006_211917_638325786439985016.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\20231006_211917_638325786439985016.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\20231006_211918_638325661408904501.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\20231006_211918_638325661408904501.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\265505571_453306269507183_2998951620244166483_n_638325909714004671.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\265505571_453306269507183_2998951620244166483_n_638325909714004671.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\265505571_453306269507183_2998951620244166483_n_638325910850420911.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\265505571_453306269507183_2998951620244166483_n_638325910850420911.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\265505571_453306269507183_2998951620244166483_n_638326640538089264.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\265505571_453306269507183_2998951620244166483_n_638326640538089264.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n (1)_638325920214184114.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n (1)_638325920214184114.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n (1)_638325927663254857.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n (1)_638325927663254857.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n (1)_638326164528113012.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n (1)_638326164528113012.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n (1)_638326777028004103.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n (1)_638326777028004103.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n (1)_638326781176338845.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n (1)_638326781176338845.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n_638325927890645687.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n_638325927890645687.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n_638325930698719622.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n_638325930698719622.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n_638325931440338307.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n_638325931440338307.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n_638326778083309768.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n_638326778083309768.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n_638326780159545128.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\337724784_127286070177888_4395007700103864324_n_638326780159545128.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\380684867_293113010226985_7746851597472986188_n_638325909111030737.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\380684867_293113010226985_7746851597472986188_n_638325909111030737.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\380684867_293113010226985_7746851597472986188_n_638325909312123496.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\380684867_293113010226985_7746851597472986188_n_638325909312123496.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\380684867_293113010226985_7746851597472986188_n_638325909313208189.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\380684867_293113010226985_7746851597472986188_n_638325909313208189.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\380684867_293113010226985_7746851597472986188_n_638325911102937518.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\380684867_293113010226985_7746851597472986188_n_638325911102937518.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\Harryporter_638325914845296249.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\Harryporter_638325914845296249.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\Harryporter_638325938733106943.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\Harryporter_638325938733106943.png"
+    },
+    {
       "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (1)_638323165061909239.jpg",
       "PackagePath": "staticwebassets\\Images\\Movie\\image (1)_638323165061909239.jpg"
     },
     {
       "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (1)_638323165415507567.jpg",
       "PackagePath": "staticwebassets\\Images\\Movie\\image (1)_638323165415507567.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (1)_638325360351785339.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (1)_638325360351785339.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (1)_638325613954367062.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (1)_638325613954367062.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (2)_638325361251194916.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (2)_638325361251194916.jpg"
     },
     {
       "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (3)_638321085800278199.jpg",
@@ -29,6 +133,10 @@
       "PackagePath": "staticwebassets\\Images\\Movie\\image (4)_638321026279374645.jpg"
     },
     {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (4)_638324478469748231.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (4)_638324478469748231.jpg"
+    },
+    {
       "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (7)_638321111434361296.jpg",
       "PackagePath": "staticwebassets\\Images\\Movie\\image (7)_638321111434361296.jpg"
     },
@@ -39,6 +147,10 @@
     {
       "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (7)_638322916372732841.jpg",
       "PackagePath": "staticwebassets\\Images\\Movie\\image (7)_638322916372732841.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image (7)_638323872353298866.jpg",
+      "PackagePath": "staticwebassets\\Images\\Movie\\image (7)_638323872353298866.jpg"
     },
     {
       "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image_638321117181552609.jpg",
@@ -63,6 +175,30 @@
     {
       "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\image_638321200828422279.jpg",
       "PackagePath": "staticwebassets\\Images\\Movie\\image_638321200828422279.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\naruto_638325915664998421.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\naruto_638325915664998421.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\naruto_638326636420025771.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\naruto_638326636420025771.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\naruto_638326637378401457.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\naruto_638326637378401457.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\naruto_638326637655936936.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\naruto_638326637655936936.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\naruto_638326774511393670.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\naruto_638326774511393670.png"
+    },
+    {
+      "Id": "C:\\Users\\bikram.shrestha\\Desktop\\MovieApplication\\MovieApplicationAPI\\wwwroot\\Images\\Movie\\naruto_638326782122813460.png",
+      "PackagePath": "staticwebassets\\Images\\Movie\\naruto_638326782122813460.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MovieAppAPI.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -9,7 +9,13 @@ namespace MovieAppAppication.Interface.IRepository
 {
     public interface IUserRepository
     {
+        Task<List<User>> GetAllUserAsync();
+
+        Task<User> GetByUserIdAsync(int Userid);
+
         Task<bool> RegisterUserAsync(User user);
         Task<User> LoginUserAsync(User user);
+        Task<bool> DeleteUserAsync(int Userid);
+       
     }
 }

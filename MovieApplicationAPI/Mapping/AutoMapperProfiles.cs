@@ -11,9 +11,11 @@ namespace MovieAppAPI.Mapping
         {
             CreateMap<MovieDto, Movie>().ReverseMap();
             CreateMap<MovieCreateDto, Movie>().ReverseMap();
+            CreateMap<MovieUpdateDto, Movie>().ReverseMap();
 
             CreateMap<RegisterDto, User>().ReverseMap();
             CreateMap<LoginDto,User>().ReverseMap();
+            CreateMap<UserDto, User>().ReverseMap();
 
             CreateMap<CommentDto, Comment>().ReverseMap();
             CreateMap<CommentCreateDto, Comment>().ReverseMap();

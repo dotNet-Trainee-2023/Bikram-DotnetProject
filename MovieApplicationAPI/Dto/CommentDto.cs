@@ -12,11 +12,11 @@ namespace MovieAppAPI.Dto
 
         [ForeignKey("Movie")]
         public int MovieId { get; set; }
-        public Movie Movies { get; set; }
+        //public Movie Movies { get; set; }
 
         [ForeignKey("User")]
         public int UserId { get; set; }
-        public User Users { get; set; }
+        //public User Users { get; set; }
 
         public DateTime TimeStamp { get; set; }
     }

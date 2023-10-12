@@ -11,7 +11,7 @@ namespace MovieAppAPI.Services
 
         Task<bool> AddMovieAsync(MovieCreateDto movieDto);
 
-        Task<bool> UpdateMovieAsync(MovieDto movieDto);
+        Task<bool> UpdateMovieAsync(MovieUpdateDto movieDto);
 
         Task<bool> DeleteMovieAsync(int id);
     }

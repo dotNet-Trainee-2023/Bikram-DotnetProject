@@ -12,7 +12,7 @@ namespace MovieAppAPI.Dto
         public string Genre { get; set; }
         [Required]
         public DateTime ReleaseDate { get; set; }
-        [Required]
-        public IFormFile MovieImage { get; set; }
+
+        public IFormFile? MovieImage { get; set; }
     }
 }

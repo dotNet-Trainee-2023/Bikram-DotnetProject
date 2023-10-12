@@ -37,5 +37,29 @@ namespace MovieAppAPI.Services
             
             
         }
+
+        public async Task<List<UserDto>> GetAllUserAsync()
+        {
+            var user = await _unitOfWork.UserRepo.GetAllUserAsync();
+
+            var userDto = _mapper.Map<List<UserDto>>(user);
+
+            //movieDto.MovieImage = movie.PhotoPath;
+            return userDto;
+        }
+
+        public async Task<UserDto> GetUserAsync(int Userid)
+        {
+            var user = await _unitOfWork.UserRepo.GetByUserIdAsync(Userid);
+            var userDto = _mapper.Map<UserDto>(user);
+            return userDto;
+        }
+
+        public async Task<bool> DeleteUserAsync(int id)
+        {
+            await _unitOfWork.UserRepo.DeleteUserAsync(id);
+            await _unitOfWork.SaveChangesAsync();
+            return true;
+        }
     }
 }

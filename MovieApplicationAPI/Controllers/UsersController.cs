@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using MovieAppAPI.Dto;
@@ -11,6 +12,7 @@ using System.Text;
 namespace MovieAppAPI.Controllers
 {
     [Route("api/[controller]")]
+
     [ApiController]
     public class UsersController : Controller
     {
@@ -22,8 +24,29 @@ namespace MovieAppAPI.Controllers
             _userService = userService;
             _config = config;
         }
+
+        [HttpGet("GetAllUsers")]
+        public async Task<IActionResult> Index()
+        {
+            var uaerDto = await _userService.GetAllUserAsync();
+            return Ok(uaerDto);
+        }
+
+        [HttpGet("GetById")]
+        public async Task<IActionResult> GetUserById(int userId)
+        {
+            var movieDto = await _userService.GetUserAsync(userId);
+            return Ok(movieDto);
+        }
+
+        [HttpDelete("Delete")]
+        public async Task<IActionResult> Delete(int userId)
+         {
+            await _userService.DeleteUserAsync(userId);
+            return Ok();
+        }
         [HttpPost("SignUp")]
-        public async Task<IActionResult> SignUp([FromForm] RegisterDto registerDto)
+        public async Task<IActionResult> SignUp( RegisterDto registerDto)
         {
             if (!ModelState.IsValid)
             {
@@ -36,7 +59,7 @@ namespace MovieAppAPI.Controllers
         }
 
         [HttpPost("Login")]
-        public async Task<IActionResult> Login([FromForm] LoginDto loginDto)
+        public async Task<IActionResult> Login( LoginDto loginDto)
         {
             if (!ModelState.IsValid)
             {
@@ -75,12 +98,7 @@ namespace MovieAppAPI.Controllers
                 );
             var jwt = new JwtSecurityTokenHandler().WriteToken(token);
 
-            //CookieOptions cookieOptions = new CookieOptions()
-            //{
-            //    Expires = expiretime,
-            //    Secure = true
-            //};
-            //Response.Cookies.Append("jwt-token", jwt, cookieOptions);
+           
 
             return jwt;
         }

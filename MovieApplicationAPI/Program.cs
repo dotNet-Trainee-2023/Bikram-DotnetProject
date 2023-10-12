@@ -60,9 +60,15 @@ namespace MovieApplicationAPI
 
             //builder.Services.AddSwaggerGen();
 
-            var app = builder.Build();
 
             // Configure the HTTP request pipeline.
+         
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", builder => builder.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin());
+            });
+
+            var app = builder.Build();
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -70,15 +76,16 @@ namespace MovieApplicationAPI
             }
 
             app.UseHttpsRedirection();
-            app.UseCors(options =>
-            {
-                options.AllowAnyHeader();
-                options.AllowAnyOrigin();
-                options.AllowAnyMethod();
-            });
+            //app.UseCors(options =>
+            //{
+            //    options.AllowAnyHeader();
+            //    options.AllowAnyOrigin();
+            //    options.AllowAnyMethod();
+            //});
             //app.UseMiddleware<ErrorHandlerMiddleware>();
             app.UseAuthorization();
             app.UseStaticFiles();
+            app.UseCors("CorsPolicy");
 
             app.MapControllers();
 

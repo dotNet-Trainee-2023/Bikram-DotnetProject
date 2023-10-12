@@ -18,5 +18,11 @@ namespace MovieAppAppication.Interface.IRepository
         Task<bool> UpdateCommentAsync(Comment comment);
 
         Task<bool> DeleteCommentAsync(int commentId);
+
+        Task<List<Comment>> GetByMovieCommentIdAsync(int MovieId);
+
+        Task<bool> CreateMovieCommentAsync(int MovieId,Comment comment);
+
+
     }
 }
